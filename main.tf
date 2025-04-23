@@ -10,3 +10,7 @@ count = 3
 Name = "yuva_HCP-${count.index + 1}"
 }
 }
+
+resource "aws_s3_bucket" "two"{
+bucket = "tefformhcpbucket976467"
+}
