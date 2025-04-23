@@ -7,6 +7,6 @@ resource "aws_instance" "one"{
   instance_type = "t2.micro"
 count = 2
   tags = {
-Name = "yuva-HCP"
+Name = "yuva_HCP-${count.index + 1}"
 }
 }
