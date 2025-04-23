@@ -7,7 +7,7 @@ resource "aws_instance" "one"{
   instance_type = "t2.micro"
 count = 2
   tags = var.instance_tags
-}}
+}
 
 variable "instance_tags" {
 type=map(string)
